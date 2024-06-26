@@ -1,0 +1,98 @@
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos específicos para a página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    color: #333;
+    font-size: 2.5rem;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+.parabens {
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.parabens p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.conscientizacao h1 {
+    color: #333;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.conscientizacao p {
+    color: #555;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4); /* Adiciona um contorno suave ao focar */
+}

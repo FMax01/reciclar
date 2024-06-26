@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Reciclagem com Emojis Arrastáveis</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo de Reciclagem</h1>
+        <div id="game-container">
+            <!-- Lixeiras -->
+            <div id="trash-bins">
+                <div id="bin-reciclavel" class="bin" data-accepted="reciclavel"><img src="re.png">  </div>
+                <div id="bin-organico" class="bin" data-accepted="organico"><img src="org.png"></div>
+                <div id="bin-papel" class="bin" data-accepted="papel"><img src="pa.png"> </div>
+                <div id="bin-plastico" class="bin" data-accepted="plastico"><img src="pla.png"> </div>
+                <div id="bin-metal" class="bin" data-accepted="metal"><img src="me.png"> </div>
+            </div>
+            <!-- Itens arrastáveis -->
+            <div id="items-container">
+                <div class="item" draggable="true" data-type="reciclavel">♻️</div>
+                <div class="item" draggable="true" data-type="organico">🍌</div>
+                <div class="item" draggable="true" data-type="papel">📝</div>
+                <div class="item" draggable="true" data-type="plastico">🍶</div>
+                <div class="item" draggable="true" data-type="metal">🍴</div>
+                <!-- Exemplo de novos itens adicionados -->
+                <div class="item" draggable="true" data-type="reciclavel">🚮</div>
+                <div class="item" draggable="true" data-type="organico">🌽</div>
+                <div class="item" draggable="true" data-type="papel">📜</div>
+                <div class="item" draggable="true" data-type="plastico">🛢️</div>
+                <div class="item" draggable="true" data-type="metal">🔩</div>
+            </div>
+            <div id="items-container">
+                <div class="item" draggable="true" data-type="reciclavel">♻️</div>
+                <div class="item" draggable="true" data-type="organico">🥑</div>
+                <div class="item" draggable="true" data-type="papel">📝</div>
+                <div class="item" draggable="true" data-type="plastico">🥡</div>
+                <div class="item" draggable="true" data-type="metal">⚙️</div>
+                <!-- Exemplo de novos itens adicionados -->
+                <div class="item" draggable="true" data-type="reciclavel">🥫</div>
+                <div class="item" draggable="true" data-type="organico">🍄</div>
+                <div class="item" draggable="true" data-type="papel">📜</div>
+                <div class="item" draggable="true" data-type="plastico">🛢️</div>
+                <div class="item" draggable="true" data-type="metal">🔩</div>
+            </div>
+        </div>
+        <!-- Exibe a pontuação -->
+        <div id="score">Pontuação: <span id="score-value">0</span></div>
+    </div>
+<div>
+
+  
+    <a class="button" href="index.html">RESET</a>
+    <a class="button" href="fim.html">PROXIMO</a>
+ 
+</div>
+    <script src="script.js"></script> <!-- Importa o arquivo JavaScript -->
+</body>
+</html>

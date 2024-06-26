@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte */
+    text-align: center; /* Centraliza o texto */
+}
+
+.container {
+    max-width: 800px; /* Largura máxima do contêiner */
+    margin: 20px auto; /* Margem automática para centralizar */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda com cor cinza claro */
+    border-radius: 8px; /* Cantos arredondados */
+    background-color: #f9f9f9; /* Cor de fundo */
+}
+
+h1 {
+    color: #333; /* Cor do título */
+}
+
+#game-container {
+    display: flex; /* Layout em linha para alinhar as lixeiras e itens */
+    justify-content: space-around; /* Espaçamento igual entre os elementos filhos */
+    margin-top: 20px; /* Margem superior */
+}
+
+#trash-bins {
+    width: 20%; /* Largura das lixeiras */
+    display: flex; /* Layout em coluna para as lixeiras */
+    flex-direction: column; /* Direção da coluna */
+    align-items: center; /* Alinha ao centro */
+}
+
+.bin {
+    width: 100px; /* Largura das lixeiras */
+    height: 100px; /* Altura das lixeiras */
+    background-color: #ffffff; /* Cor de fundo das lixeiras */
+    margin: 10px 0; /* Margem superior e inferior */
+    padding: 10px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor ao passar por cima */
+    border-radius: 8px; /* Cantos arredondados */
+    display: flex; /* Layout em linha para alinhar o texto */
+    justify-content: center; /* Alinha o conteúdo ao centro */
+    align-items: center; /* Alinha o conteúdo ao centro */
+    font-size: 1.5rem; /* Tamanho da fonte */
+}
+
+#items-container {
+    width: 60%; /* Largura dos itens */
+    display: flex; /* Layout em linha para os itens */
+    flex-wrap: wrap; /* Quebra de linha automática */
+    justify-content: center; /* Alinha os itens ao centro */
+}
+
+.item {
+    width: 100px; /* Largura dos itens */
+    height: 100px; /* Altura dos itens */
+    margin: 10px; /* Margem entre os itens */
+    cursor: grab; /* Cursor ao arrastar */
+    font-size: 3rem; /* Tamanho da fonte */
+    display: flex; /* Layout em linha para alinhar o texto */
+    justify-content: center; /* Alinha o conteúdo ao centro */
+    align-items: center; /* Alinha o conteúdo ao centro */
+    user-select: none; /* Impede a seleção de texto */
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out; /* Transições de opacidade e transformação */
+}
+
+.item.dragging {
+    opacity: 0.5; /* Opacidade ao arrastar */
+    transform: scale(1.1); /* Aumenta o tamanho ao arrastar */
+}
+
+#score {
+    margin-top: 20px; /* Margem superior */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4); /* Adiciona um contorno suave ao focar */
+}
+
+/* Estilo adicional para botões de tamanho menor */
+.button.small {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* Estilo para botão com texto preto */
+.button.black-text {
+    color: #000000; /* Define a cor do texto para preto */
+}
+  body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    
